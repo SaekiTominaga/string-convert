@@ -1,6 +1,6 @@
 {
 	"name": "@saekitominaga/string-convert",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Converts newlines in a string, `trim ()`, half-width / full-width conversion, etc.",
 	"homepage": "https://github.com/SaekiTominaga/string-convert#readme",
 	"bugs": {
