@@ -29,10 +29,16 @@ StringConvert.convert('  Ｆｏｏ  \r\n\r\n  Ｂａｒ　　　　　　Ｂａ�
     '💖': '⭐',
   },
 }); // foo\nbar baz⭐
+
+try {
+  StringConvert.convert('foo \r\n bar \n baz', {});
+} catch {
+  // A string with mixed newline codes are not supported
+}
+
 ```
 
-- Newline codes `CR`, `LF`, and `CR+LF` are supported.
-- Strings with mixed newline codes are not supported.
+\* Newline codes `CR`, `LF`, and `CR+LF` are supported.
 
 ## Methods
 
@@ -42,9 +48,9 @@ StringConvert.convert('  Ｆｏｏ  \r\n\r\n  Ｂａｒ　　　　　　Ｂａ�
 </dl>
 
 ```TypeScript
-/* Conversion options */
+/* Convert options */
 interface Option {
-  newline?: Newline; // Normalize newline
+  newline?: Newline; // Converts newline
   trim?: boolean; // Remove whitespace at both ends (Only one of `trim` and `trimMultiLine` can be specified)
   trimMultiLine?: boolean; // Remove whitespace at both ends of each line (Only one of `trim` and `trimMultiLine` can be specified)
   noBlankLine?: boolean; // Delete blank lines
@@ -57,7 +63,7 @@ interface Option {
   table?: Table; // Proprietary conversion table (An associative array that specifies the character string before conversion as the key and the character string after conversion as the value)
 }
 
-/* Normalize newline */
+/* Converts newline */
 type Newline = 'CR' | 'LF' | 'CRLF';
 
 /* Proprietary conversion table */

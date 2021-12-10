@@ -1,6 +1,6 @@
-/* Conversion options */
+/* Convert options */
 interface Option {
-	newline?: Newline; // Normalize newline
+	newline?: Newline; // Converts newline
 	trim?: boolean; // Remove whitespace at both ends (Only one of `trim` and `trimMultiLine` can be specified)
 	trimMultiLine?: boolean; // Remove whitespace at both ends of each line (Only one of `trim` and `trimMultiLine` can be specified)
 	noBlankLine?: boolean; // Delete blank lines
@@ -13,7 +13,7 @@ interface Option {
 	table?: Table; // Proprietary conversion table (An associative array that specifies the character string before conversion as the key and the character string after conversion as the value)
 }
 
-/* Normalize newline */
+/* Converts newline */
 type Newline = 'CR' | 'LF' | 'CRLF';
 
 /* Proprietary conversion table */
