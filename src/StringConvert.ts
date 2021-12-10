@@ -22,7 +22,7 @@ interface Table {
 }
 
 /**
- * Performs conversions such as `trim()` and hankaku / zenkaku conversion.
+ * Converts newlines in a string, `trim()`, half-width / full-width conversion, etc
  */
 export default class {
 	/**

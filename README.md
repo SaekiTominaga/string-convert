@@ -1,4 +1,4 @@
-# Converts newlines in a string, `trim ()`, half-width / full-width conversion, etc
+# Converts newlines in a string, `trim()`, half-width / full-width conversion, etc
 
 [![npm version](https://badge.fury.io/js/%40saekitominaga%2Fstring-convert.svg)](https://badge.fury.io/js/%40saekitominaga%2Fstring-convert)
 [![Build Status](https://app.travis-ci.com/SaekiTominaga/string-convert.svg?branch=main)](https://app.travis-ci.com/SaekiTominaga/string-convert)
